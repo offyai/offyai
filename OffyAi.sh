@@ -42,6 +42,9 @@ echo "        STARTING SERVER..."
 echo "========================================"
 echo
 
+# 🔥 Added this line (your request)
+chmod +x src/llama-server
+
 src/llama-server \
     -m models/OffyAi-0.5B.gguf \
     -c 1024 \
@@ -67,7 +70,6 @@ echo "      LAUNCHING WEB INTERFACE"
 echo "========================================"
 echo
 
-# Browser function
 open_browser() {
     local cmd="$1"
     echo "[ACTION] Trying: $cmd"
@@ -75,7 +77,6 @@ open_browser() {
     return $?
 }
 
-# Try multiple open methods
 if open_browser "xdg-open"; then
     echo "[SUCCESS] Browser opened via xdg-open"
 
@@ -122,7 +123,6 @@ shutdown() {
 
 trap shutdown INT
 
-# Keep script alive for logs
 while true; do
     sleep 1
 done
