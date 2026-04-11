@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ![OffyAI Logo](https://raw.githubusercontent.com/bharat-poojari/offyai/main/offyai.png)
+  <img src="https://raw.githubusercontent.com/bharat-poojari/offyai/main/offyai.png" width="192" height="192" alt="OffyAI Logo">
 
   ### 🎓 Your Offline Programming Assistant - Precise, Private, and Always Available
 
